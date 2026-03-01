@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dinaol Kisi Mekesa | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    scroll-behavior:smooth;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+header h1{
+    font-size:3rem;
+    animation:fadeIn 2s ease-in-out;
+}
+
+header span{
+    color:#00f5d4;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2rem;
+    opacity:0.8;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 25px;
+    background:#00f5d4;
+    color:#000;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    background:white;
+}
+
+section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:40px;
+    font-size:2rem;
+    color:#00f5d4;
+}
+
+.skills-container, .projects-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:25px;
+    width:250px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,0.2);
+}
+
+.social-links a{
+    display:inline-block;
+    margin:10px;
+    padding:10px 20px;
+    border-radius:25px;
+    text-decoration:none;
+    color:white;
+    background:#00f5d4;
+    color:black;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    background:white;
+    transform:scale(1.1);
+}
+
+footer{
+    padding:20px;
+    text-align:center;
+    background:#000;
+    font-size:0.9rem;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(-20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Hello, I'm <span>Dinaol Kisi Mekesa</span></h1>
+    <p>Web Developer | HTML | CSS | JavaScript</p>
+    <button class="btn" onclick="scrollToContact()">Contact Me</button>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a passionate web developer focused on creating modern,
+        responsive and user-friendly websites using HTML, CSS and JavaScript.
+        I enjoy building clean UI and interactive web experiences.
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="card">HTML5</div>
+        <div class="card">CSS3</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Responsive Design</div>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Modern responsive personal portfolio.</p>
+        </div>
+        <div class="card">
+            <h3>Login System</h3>
+            <p>Interactive login form with validation.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <strong>dinakisi74@gmail.com</strong></p>
+
+    <div class="social-links">
+        <a href="https://instagram.com/dinaolkisi" target="_blank">Instagram</a>
+        <a href="https://t.me/Or_technology" target="_blank">Telegram</a>
+        <a href="mailto:dina kisi">Send Email</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Dinaol Kisi Mekesa | All Rights Reserved
+</footer>
+
+<script>
+function scrollToContact(){
+    document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
